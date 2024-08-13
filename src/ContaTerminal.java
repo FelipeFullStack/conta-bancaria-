@@ -1,6 +1,6 @@
 public class ContaTerminal {
     private String agencia;
-    private String numero;
+    private int numero;
     private String nome;
     private double saldo;
 
@@ -12,11 +12,11 @@ public class ContaTerminal {
         this.agencia = agencia;
     }
 
-    public String getNumero() {
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
@@ -34,15 +34,5 @@ public class ContaTerminal {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
-    }
-
-    @Override
-    public String toString() {
-        return "ContaTerminal{" +
-                "agencia='" + agencia + '\'' +
-                ", numero='" + numero + '\'' +
-                ", nome='" + nome + '\'' +
-                ", saldo=" + saldo +
-                '}';
     }
 }
